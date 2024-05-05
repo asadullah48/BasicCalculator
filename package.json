@@ -1,0 +1,18 @@
+{
+  "name": "basiccalculator",
+  "version": "1.0.0",
+  "description": "BASIC CALCULATOR PROGRAM WRITTEN IN TYPE SCIPRT & RUN IN JAVA SCIRPT",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "asadullah shafique",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^9.2.20"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7"
+  }
+}
