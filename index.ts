@@ -1,4 +1,4 @@
-#! /usr/bin/enr Node 
+#! /usr/bin/enr node 
 import inquirer from "inquirer";
 const answer = await inquirer.prompt([
     { message: "enter fristNumber", type: "number", name: "fristNumber" },
@@ -7,7 +7,7 @@ const answer = await inquirer.prompt([
       message: "select one of the operations",
       type: "list",
       name: "operator",
-      choices: ["Addition", "Subtraction", "Multiplication", "Division",]
+      choices: ["Addition", "Subtraction", "Multiplication", "Division","Percentage"]
     }]);
     if (answer.operator === "Addition"){
       let result = answer.fristNumber +answer.secondNumber
@@ -23,6 +23,10 @@ const answer = await inquirer.prompt([
       }
       else if (answer.operator === "Division"){
         let result = answer.fristNumber /answer.secondNumber
+        console.log(result)
+      } 
+      else if (answer.operator === "Percentage"){
+        let result = answer.fristNumber %answer.secondNumber
         console.log(result)
       };
       
